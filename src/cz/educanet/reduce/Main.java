@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = NumberUtils.getRandomNumbers();
-        ArrayList<Integer> emptynumbers = new ArrayList<>();
+
 
         System.out.println("Součet: " + reduce(numbers, (result, number) -> result + number));
         System.out.println("Min: " + reduce(numbers, (result, number) -> Math.min(result, number)));
